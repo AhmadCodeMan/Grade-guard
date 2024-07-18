@@ -97,8 +97,8 @@ header .header-child {
     display: flex;
     border-radius: 30px;
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 0;
+    right: 0;
     background: #000;
     box-shadow: inset 0px 0px 10px #fff,
                 inset 0px 0px 10px #ddd;
