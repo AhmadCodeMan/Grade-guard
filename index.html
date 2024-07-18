@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant GPA/CGPA Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body">
+        
+    </div>
+        <header id="header">
+        <div class="header-child">
+            <div class="title">
+                Grade Guard
+            </div>
+            <div class="menu" onclick="myMenu()"><div class="top"></div><div class="mid"></div><div class="bottom"></div></div>
+        </div>
+        <div class="toggle-menu">
+            <div class="toggle-menu-child">
+                <div class="switch-container" onclick="nightMode()">
+                    <div class="mode-switch">
+                        <div class="switcher"></div>
+                    </div>
+                </div>
+                <button onclick="indexPage()" class="index-page">Home</button>
+                <button onclick="calculateGPA()">Calculate GPA</button>
+                <button onclick="calculateCgpa()">Calculate CGPA</button>
+                <button onclick="openAboutPage()">About</button>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-child">
+            <button class="gpa-click" onclick="calculateGPA()">Calculate GPA</button>
+            <button class="cgpa-click" onclick="calculateCgpa()">Calculate CGPA</button>
+        </div>
+    </div>
+
+    <div class="calculate-gpa">
+        <div class="calculate-gpa-child">
+            <div class="back-to-home">
+                <button onclick="indexPage()" class="back-home-page" id="back-home-page">
+                    <img src="img/back home.png" alt="">
+                </button>
+            </div>
+
+            <h1>GPA Calculation</h1>
+            <select id="courseAmount" onchange="addGpaRows()">
+                <option selected disabled>Select Number of Courses</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                
+            </select>
+            <button onclick="evaluateGpa()" class="evaluator">Calculate GPA</button>
+            <div class="show-gpa error-reports"></div>
+            <div class="gpa-scroll">
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="calculate-cgpa">
+        <div class="calculate-cgpa-child">
+            <div class="back-to-home">
+                <button onclick="indexPage()" class="back-home-page" id="back-home-page">
+                    <img src="img/back home.png" alt="">
+                </button>
+            </div>
+
+            <h1>CGPA Calculation</h1>
+            
+            <select id="semesterAmount" onchange="addCgpaRows()">
+                <option selected disabled>Select Number of Semesters</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+            </select>
+            <button onclick="evaluateCgpa()" class="cgpa-evaluator">Calculate CGPA</button>
+            <div class="show-cgpa error-cgpa-reports"></div>
+            <div class="cgpa-semester-container"></div>
+
+        </div>
+        
+
+    </div>
+    <div class="about-page">
+        <div class="about-child">
+            <div class="back-to-home">
+                <button onclick="indexPage()" class="back-home-page" id="back-home-page">
+                    <img src="img/back home.png" alt="">
+                </button>
+            </div>
+            <div class="about-contents">
+            
+                <h1>About This App</h1>
+                <p class="welcome"><strong>Welcome to Grade Guard</strong></p>
+                <p>Hi, I'm <strong>Ahmad Usman</strong>, the developer of this app. As a student myself, I understand the importance of keeping track of your academic performance. This app is designed to help you easily calculate your GPA and CGPA with a user-friendly interface and accurate results.</p>
+            
+                <h2>Features:</h2>
+                <ul>
+                    <li><strong>Easy to Use</strong>: Simple and intuitive design.</li>
+                    <li><strong>Supports Multiple Grading Systems</strong>: Fits various educational standards.</li>
+                    <li><strong>Real-Time Calculations</strong>: Instant results as you input your data.</li>
+                    <li><strong>Theme Switching</strong>: Toggle between light and dark themes to adapt to different environments and visual preference.</li>
+                </ul>
+            
+                <h2>How It Works:</h2>
+                <ol>
+                    <li><strong>Enter Courses</strong>: Add your courses, grades, and credit units.</li>
+                    <li><strong>Calculate</strong>: Get your GPA or CGPA instantly.</li>
+                    <li><strong>Review</strong>: See detailed breakdowns to understand your performance.</li>
+                </ol>
+            
+                <h2>About Me:</h2>
+                <p class="about-me">I'm passionate about creating tools that make student life easier. Visit my portfolio at <a href="https://www.ahmadusman.varcel.app">https://www.ahmadusman.varcel.app</a> to see more of my work and get in touch!</p>
+            
+                <h2>Contact:</h2>
+                <p class="contact-me">For support or feedback, email me at <a href="mailto:admin@ahmadwebman@gmail.com">ahmadwebman@gmail.com</a>.</p>
+
+        </div>
+        
+
+    </div>
+
+    <script src="javascript/script.js">
+
+    </script>
+</body>
+</html>
