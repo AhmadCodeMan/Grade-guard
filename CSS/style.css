@@ -385,10 +385,10 @@ li{
     margin: 5px 0px 0px 30px;
 }
 /* Large Screens*/
-@media only screen and (min-width: 700px){
-    .container{
+@media only screen and (min-width: 400px){
+    .container-child{
         flex-direction: row;
-        
+        justify-content: space-around;
     }
     .container button{
         width: 40%;
