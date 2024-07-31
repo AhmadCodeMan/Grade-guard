@@ -155,6 +155,9 @@ header .header-child {
     background: var(--white);
     color: var(--main);
 }
+.desktop-menu{
+    display: none;
+}
 
 /* Container Styles */
 .container {
@@ -385,7 +388,32 @@ li{
     margin: 5px 0px 0px 30px;
 }
 /* Large Screens*/
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 700px){
+    .desktop-menu{
+    display: flex;
+    }
+    .menu{
+    display: none;
+    }
+    .desktop-menu-child{
+        display: flex;
+        align-items: center;
+    }
+    .desktop-menu-child .switch-container{
+        position: relative;
+        right: ;
+    }
+    .desktop-menu-child button{
+        height: 40px;
+        font-size: 18px;
+        background: var(--main);
+        color: var(--white);
+        border: 2px solid var(--white);
+        margin: 0px 10px;
+        border-radius: 10px;
+        width: 180px;
+        font-weight: bold;
+    }
     .container-child{
         flex-direction: row;
         /*justify-content: space-around;*/
