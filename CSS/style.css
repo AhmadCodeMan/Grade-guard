@@ -433,4 +433,7 @@ li{
         margin: 10px;
         font-size: 5vw;
     }
+    .calculate-gpa .evaluator, .calculate-cgpa .cgpa-evaluator {
+        font-size: 30px;
+    }
 }
