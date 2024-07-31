@@ -152,7 +152,7 @@ function addGpaRows() {
                 <option value="2">D</option>
                 <option value="1">E</option>
             </select>
-            <span class="remove"><img src="img/delete.png" alt=""></span>
+            <span class="remove"><img src="IMG/delete.png" alt=""></span>
         `;
         gpaCourseContainer.appendChild(courseDiv);
     }
