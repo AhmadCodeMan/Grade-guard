@@ -223,7 +223,7 @@ header .header-child {
     border-radius: 10px;
     background: var(--main);
     outline: none;
-    min-width: 300px;
+    max-width: 400px;
     width: 95%;
     height: 40px;
     color: var(--white);
@@ -279,12 +279,14 @@ header .header-child {
     border: 1px solid var(--main);
     outline: none;
     width: 20vw;
+    max-width: 100px;
     margin: 0px 2px;
     border-radius: 3px;
 }
 
 .gpa-scroll img, .cgpa-semester img {
     height: 8vw;
+    max-height: 80px;
 }
 
 .gpa-displayer {
