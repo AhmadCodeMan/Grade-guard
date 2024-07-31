@@ -392,6 +392,9 @@ li{
     .desktop-menu{
     display: flex;
     }
+    .header-child .title{
+        font-size: 45px;
+    }
     .menu{
     display: none;
     }
@@ -405,14 +408,17 @@ li{
     }
     .desktop-menu-child button{
         height: 40px;
-        font-size: 18px;
+        font-size: 17px;
         background: var(--main);
         color: var(--white);
         border: 2px solid var(--white);
         margin: 0px 10px;
         border-radius: 10px;
-        width: 180px;
+        width: 160px;
         font-weight: bold;
+    }
+    h1{
+        font-size: 45px;
     }
     .container-child{
         flex-direction: row;
