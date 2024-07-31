@@ -384,3 +384,15 @@ h2{
 li{
     margin: 5px 0px 0px 30px;
 }
+/* Large Screens*/
+@media only screen and (min-widt: 700px){
+    .container{
+        flex-direction: row;
+        
+    }
+    .container button{
+        width: 40%;
+        height: 300px;
+        font-size: 5vw;
+    }
+}
