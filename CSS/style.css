@@ -172,7 +172,7 @@ header .header-child {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 70%;
 }
 
 .container button {
@@ -388,11 +388,12 @@ li{
 @media only screen and (min-width: 400px){
     .container-child{
         flex-direction: row;
-        justify-content: space-around;
+        /*justify-content: space-around;*/
     }
     .container button{
-        width: 40%;
+        width: 30%;
         height: 300px;
+        margin: 10px;
         font-size: 5vw;
     }
 }
