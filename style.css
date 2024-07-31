@@ -1,0 +1,427 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main: #0598fd;
+    --white: #fff;
+    --black: #000;
+    --transMenu: rgba(255,255,255,0.9);
+}
+
+body {
+    background: var(--white);
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(var(--main), var(--white));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    box-shadow: 0px 0px 15px var(--black);
+}
+
+header .header-child {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-child .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--white);
+    -webkit-text-stroke: 1px var(--black);
+}
+
+/* Menu Styles */
+.menu {
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .top, .menu .mid, .menu .bottom {
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--white);
+    border: .5px solid var(--black);
+}
+
+.menu .mid {
+    margin: 7px 0px;
+    display: block;
+}
+
+.toggle-menu {
+    width: 100%;
+    height: 0px;
+    background: var(--transMenu);
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px var(--black);
+    overflow: hidden;
+    transition: .3s;
+}
+
+.toggle-menu-child {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.switch-container{
+    height: 30px;
+    width: 60px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    box-shadow: inset 0px 0px 10px #fff,
+                inset 0px 0px 10px #ddd;
+}
+.toggleNightMode{
+    background: #fff;
+    box-shadow: inset 0px 0px 5px #000,
+                inset 0px 2px 10px #000;
+}
+.mode-switch{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.switcher{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    left: 1;
+    top: 1;
+    bottom: 1;
+    transform: scale(0.9);
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 5px #333;
+    transition: .5s;
+}
+.switcherBackground{
+    background: #000;
+    box-shadow: inset 0px 0px 5px #fff,
+                inset 0px 2px 10px #eee;
+}
+.toggle-menu button {
+    width: 80%;
+    height: 40px;
+    margin: 5px;
+    background: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+.toggle-menu .index-page{
+    margin-top: 50px;
+}
+
+.toggle-menu button:hover {
+    background: var(--white);
+    color: var(--main);
+}
+.desktop-menu{
+    display: none;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-child {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.container button {
+    color: var(--black);
+    width: 95%;
+    height: 70vw;
+    font-size: 13vw;
+    -webkit-text-stroke: 1px var(--white);
+    font-weight: bold;
+    font-family: georgia;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(var(--white), var(--main));
+    box-shadow: 0px 0px 10px var(--black);
+}
+
+/* GPA and CGPA Styles */
+.calculate-gpa, .calculate-cgpa, .about-page{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: none;
+}
+
+.calculate-gpa-child, .calculate-cgpa-child, .about-child{
+    margin-top: 60px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.calculate-gpa h1, .calculate-cgpa h1, .about-page h1{
+    -webkit-text-stroke: 1px var(--main);
+    text-align: center;
+    color: var(--black);
+    font-size: 11vw;
+}
+
+.calculate-gpa .evaluator, .calculate-cgpa .cgpa-evaluator {
+    border: 3px solid var(--main);
+    border-radius: 10px;
+    background: var(--main);
+    outline: none;
+    min-width: 300px;
+    width: 95%;
+    height: 40px;
+    color: var(--white);
+    font-size: 6vw;
+    font-weight: 600;
+    transition: .4s;
+    margin-bottom: 20px;
+}
+
+.calculate-gpa button:hover, .cgpa-evaluator:hover {
+    background: var(--white);
+    color: var(--main);
+}
+
+/* GPA and CGPA Reports Overlay */
+.gpa-reports-overlay, .cgpa-reports-overlay {
+    display: none;
+}
+
+.gpa-scroll, .cgpa-semester-container {
+    height: 45vh;
+    overflow-y: auto;
+}
+
+.gpa-course, .cgpa-semester {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gpa-points, .total-credit-units {
+    width: 20vw;
+    margin: 0px 5px;
+    border: 1px solid var(--main);
+    height: 7vw;
+    border-radius: 5px;
+    padding: 0px 2px;
+    outline: none;
+}
+
+.gpa-scroll input, .cgpa-semester .semester-name {
+    width: 40vw;
+    height: 90%;
+    outline: none;
+    border: 1px solid var(--main);
+    padding: 0px 3px;
+    border-radius: 3px;
+}
+
+.gpa-scroll select, .cgpa-semester .cgpa-gpa, .cgpa-semester .cgpa-units {
+    height: 90%;
+    border: 1px solid var(--main);
+    outline: none;
+    width: 20vw;
+    margin: 0px 2px;
+    border-radius: 3px;
+}
+
+.gpa-scroll img, .cgpa-semester img {
+    height: 8vw;
+}
+
+.gpa-displayer {
+    font-size: 15vw;
+    color: var(--main);
+    -webkit-text-stroke: 1px var(--black);
+}
+
+.show-gpa, .show-cgpa {
+    color: var(--black);
+}
+
+.error-reports, .error-cgpa-reports {
+    color: red;
+    width: 95%;
+    text-align: center;
+}
+
+/* Input and Select Styles */
+select, input {
+    background: var(--white);
+    color: var(--black);
+}
+
+#courseAmount, #semesterAmount {
+    border: 2px solid var(--main);
+    width: 85%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 15px 0px;
+    outline: none;
+}
+
+/* Animation Styles */
+.animate-error {
+    animation: .5s gpa-error;
+}
+
+@keyframes gpa-error {
+    0% {
+        margin-left: 10px;
+    }
+    10% {
+        margin-left: -20px;
+    }
+    30% {
+        margin-left: 10px;
+    }
+    40% {
+        margin-left: -20px;
+    }
+    50% {
+        margin-left: 10px;
+    }
+    60% {
+        margin-left: -20px;
+    }
+    70% {
+        margin-left: 10px;
+    }
+    80% {
+        margin-left: -20px;
+    }
+    90% {
+        margin-left: 10px;
+    }
+    100% {
+        margin-left: -20px;
+    }
+}
+
+/* Back to Home Styles */
+.back-to-home, .about-page .back-to-home {
+    width: 100%;
+}
+
+#back-home-page, #back-home {
+    border: none;
+    margin-top: 10px;
+    background: transparent;
+}
+.about-contents{
+    margin: 20px 0px;
+    color: var(--black);
+}
+.welcome{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.about-me, .contact-me{
+    margin-left: 30px;
+}
+.paragraph{
+    color: #000;
+}
+h2{
+    margin: 30px 0px 10px;
+}
+li{
+    margin: 5px 0px 0px 30px;
+}
+/* Large Screens*/
+@media only screen and (min-width: 700px){
+    .desktop-menu{
+    display: flex;
+    }
+    .menu{
+    display: none;
+    }
+    .desktop-menu-child{
+        display: flex;
+        align-items: center;
+    }
+    .desktop-menu-child .switch-container{
+        position: relative;
+        right: ;
+    }
+    .desktop-menu-child button{
+        height: 40px;
+        font-size: 18px;
+        background: var(--main);
+        color: var(--white);
+        border: 2px solid var(--white);
+        margin: 0px 10px;
+        border-radius: 10px;
+        width: 180px;
+        font-weight: bold;
+    }
+    .container-child{
+        flex-direction: row;
+        /*justify-content: space-around;*/
+    }
+    .container button{
+        width: 30%;
+        height: 300px;
+        margin: 10px;
+        font-size: 5vw;
+    }
+}
