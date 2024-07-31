@@ -18,7 +18,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    height: 15vw;
+    height: 60px;
     background: linear-gradient(var(--main), var(--white));
     display: flex;
     align-items: center;
