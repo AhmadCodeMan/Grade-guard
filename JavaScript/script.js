@@ -88,8 +88,9 @@ function nightMode() {
 // Function to show GPA calculation page
 function calculateGPA() {
     homePage.style.display = "none";
-    gpaPage.style.display = "flex";
+    cgpaPage.style.display = "none";
     aboutPage.style.display = "none"
+    gpaPage.style.display = "flex";
     let toggleMenu = document.querySelector(".toggle-menu");
     toggleMenu.style.height = "0px";
 }
@@ -97,9 +98,9 @@ function calculateGPA() {
 // Function to show CGPA calculation page
 function calculateCgpa() {
     homePage.style.display = "none";
-    cgpaPage.style.display = "flex";
     gpaPage.style.display = "none";
     aboutPage.style.display = "none"
+    cgpaPage.style.display = "flex";
     let toggleMenu = document.querySelector(".toggle-menu");
     toggleMenu.style.height = "0px";
 }
